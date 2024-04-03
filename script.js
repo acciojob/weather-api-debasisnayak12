@@ -1,8 +1,8 @@
 //your JS code here. If required.
-let btn = document.getElementById("btn");
+let btn = document.getElementById("getCurrentWeather");
 const API_KEY = "ed4d31dd300b25a056d846b625caf1b0";
 btn.addEventListener('click',()=>{
-	fetch(`https://api.openweathermap.org/data/2.5/weather?q=London&appid=${API_KEY}&units=metric`)
+	fetch(`https://api.openweathermap.org/data/2.5/weather?q=London&appid=${API_KEY}`)
 	.then((res)=>res.json())
 	.then(data => {
 		let weatherD = document.getElementById("weatherData");
